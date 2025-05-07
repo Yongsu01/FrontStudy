@@ -48,7 +48,10 @@ export default function NavDropDown() {
               return(
                 <ListItem key={idx}>
                   <img src={item.imageUrl} alt={item.label}/>
-                  <div>{item.label}</div>
+                  <div style={{
+                    display: 'flex',
+                    justifyContent : "center",
+                  }}>{item.label}</div>
                 </ListItem>
               );
             })
