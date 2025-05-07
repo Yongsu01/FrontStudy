@@ -8,6 +8,7 @@ export default function Home() {
             <Header></Header>
             <Nav></Nav>
             <MainPageBasic></MainPageBasic>
+            <div></div>
         </div>
     );
 }
