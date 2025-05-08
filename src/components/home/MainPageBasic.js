@@ -112,7 +112,6 @@ const SwiperNavButton = styled.button`
 `;
 
 const MainPageLayout = styled.main`
-  min-height: 616.734px;
 `;
 
 const MainBanner = styled.div`
