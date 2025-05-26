@@ -103,7 +103,7 @@ const NavLeft = styled.div`
 `;
 
 const NavRight = styled.div`
-  margin-right: -12px;
+  margin-right: -14px;
 `;
 
 const NavRightButton = styled.a`
@@ -111,7 +111,6 @@ const NavRightButton = styled.a`
   display: inline-block;
   font-size: 15px;
   font-weight: 700;
-  padding: 21px 12px;
-
+  padding: 21px 14px;
   color: inherit;
 `;

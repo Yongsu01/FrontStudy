@@ -16,7 +16,7 @@ export default function Header() {
   );
 }
 
-const imgUrl = "https://static.univstore.com/web/image/logo.svg"
+const imgUrl = "https://static.univstore.com/web/image/logo.png"
 
 const HeaderLayout = styled.header`
   display: flex;
