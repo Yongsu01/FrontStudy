@@ -134,10 +134,6 @@ const MainBanner = styled.div`
   transition: background-color linear 300ms;
 `;
 
-// const MainBannerImg = styled.img`
-  
-// `;
-
 const Carousel = styled.div`
   position: relative;
   margin: 0 auto;

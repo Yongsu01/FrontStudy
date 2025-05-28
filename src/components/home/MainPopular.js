@@ -13,14 +13,19 @@ export default function MainPopular(){
           items.map((item, idx)=>{
             return (
               <ItemCard key={idx}>
-                <ItemCardThumnail src={item.thumnailLink}></ItemCardThumnail>
+                <ItemCardThumbnailWrapper>
+                  <ItemCardThumnail src={item.thumnailLink}></ItemCardThumnail>
+                </ItemCardThumbnailWrapper>
                 <ItemCardInfo>
                   <ItemCardInfoBrandName>{item.cardInfo.brandName}</ItemCardInfoBrandName>
                   <ItemCardInfoName>{item.cardInfo.name}</ItemCardInfoName>
                   <ItemCardInfoCode>{item.cardInfo.code}</ItemCardInfoCode>
                   <ItemCardInfoPrice>{item.cardInfo.price}</ItemCardInfoPrice>
                   <ValidationMessage></ValidationMessage>
-                  <ItemCardInfoReview>{item.cardInfo.review}</ItemCardInfoReview>
+                  <ItemCardInfoReview>
+                    <ItemCardInfoReviewPentagram src="https://static.univstore.com/web/image/ic-pentagram-active.svg"/>
+                    <ItemCardInfoReviewAverage>{item.cardInfo.review}</ItemCardInfoReviewAverage>
+                  </ItemCardInfoReview>
                 </ItemCardInfo>
               </ItemCard>
             );
@@ -58,10 +63,27 @@ const ItemList = styled.div`
 `;
 
 const ItemCard = styled.div`
+  position: relative;
   margin-bottom: 32px;
 `;
-
+const ItemCardThumbnailWrapper = styled.div`
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: all cubic-bezier(0.4, 0, 1, 1) 200ms;
+  opacity: 1;
+  overflow: hidden;
+`;
 const ItemCardThumnail = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 1;
   object-fit: cover;
 `;
@@ -110,4 +132,14 @@ const ItemCardInfoReview = styled.div`
   gap: 3px;
   align-items: baseline;
   margin-top: 6px;
+`;
+
+const ItemCardInfoReviewPentagram = styled.img`
+  width: 11px;
+  height: 11px;
+`;
+
+const ItemCardInfoReviewAverage = styled.div`
+  font-size: 13px;
+  font-weight: bold;
 `;
