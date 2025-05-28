@@ -1,0 +1,14 @@
+{
+  "mainPopularItem" : [
+    {
+      "thumnailLink": "https://image.univstore.com/SM-S936NLBAKOO_thumbnail-00-re2.jpg?w=400&h=400&f=avif&q=80",
+      "cardInfo" : {
+        "brandName" : "삼성",
+        "name" : "갤럭시 S25+ 자급제 256GB 아이스 블루",
+        "codde" : "SM-S936NLBAKOO",
+        "price" : "1,353,000",
+        "review" : 5.0
+      }
+    }
+  ]
+}

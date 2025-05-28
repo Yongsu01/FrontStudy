@@ -1,6 +1,6 @@
 import {useRef, useState, useMemo, useEffect } from "react";
 import styled from "styled-components";
-import slides from "../../api/slides.json";
+import slides from "../../data/slides.json";
 
 export default function MainPageBasic() {
   const data = slides.slides
@@ -133,6 +133,10 @@ const MainPageLayout = styled.main`
 const MainBanner = styled.div`
   transition: background-color linear 300ms;
 `;
+
+// const MainBannerImg = styled.img`
+  
+// `;
 
 const Carousel = styled.div`
   position: relative;
