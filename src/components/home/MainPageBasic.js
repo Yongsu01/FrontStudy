@@ -524,7 +524,7 @@ export default function MainPageBasic() {
     </MainPageLayout>
   );
 }
-
+//#region
 const SwiperNav = styled.nav`
   position: absolute;
   left: 50%;
@@ -640,12 +640,13 @@ const LineBanner = styled.div`
     }
   }
 `;
-
+//#endregion
+//#region
 const Popular = styled.div`
   margin: 64px 0;
   h3 {
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
     width: 80.625%;
     max-width: 1032px;
   }
@@ -664,12 +665,12 @@ const PopularItemWrapper = styled.div`
 const PopularItem = styled.div`
   position: relative;
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   display: block;
   padding: 8px 0;
 `;
 
-const PopularItemImg = styled.img`
+const PopularItemImg = styled.div`
   background-image: url(${(props) => props.img});
   background-position: center;
   background-repeat: no-repeat;
@@ -702,7 +703,7 @@ const PopularItemBrand = styled.div`
     width: 5px;
     height: 8px;
     vertical-align: middle;
-    margin-left: 4px;
+    margin-left: 3px;
   }
 `;
 
@@ -761,15 +762,16 @@ const PopularItemCheckRealPrice = styled.a`
 `;
 
 const PopularItemScore = styled.div`
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 13px;
   span {
     font-weight: bold;
     margin-right: 3px;
+    padding-left: 3px;
   }
   &::before {
     background: url(https://static.univstore.com/web/image/ic-pentagram-active.svg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     content: "";
@@ -783,3 +785,5 @@ const PopularItemScoreCount = styled.div`
   display: inline-block;
   color: #787a87;
 `;
+//#endregion
+
